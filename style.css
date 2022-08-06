@@ -277,7 +277,7 @@ img{
 	position: relative;
 	background-size: cover;
 	background-attachment: fixed;
-	display: flex;
+	display: grid;
 }
 .pag5 h2{
 	margin-top: 375px;
