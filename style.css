@@ -1,85 +1,325 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-
-:root {
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-body {
-	min-height: 100vh;
-	background-color: #fafafa;
-}
-
-.container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
-}
-
-.heading {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
-}
-
-.heading span {
-	display: block;
-}
-
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
-}
-
-.gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
-}
-
-.gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-	transform: scale(1.15);
-}
-
 /*
+This code is an example to train the basic commands in css
+__author__: João Paulo Oliveira
+ */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-@supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
-
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
+body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+.pag1{
+	position: relative;
+	height: 768px;
+	background: url("https://images.pexels.com/photos/235298/pexels-photo-235298.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.text-pag1{
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	padding-top: 200px;
+	padding-left: 50px;
+}
+.white{
+	color: #FFFFFF;
+	margin-bottom: 0px;
+	font-size: 140px;
+}
+.red{
+	color: #FF4C4C;
+	margin-top: -48px;
+	font-size: 135px;
+	margin-bottom: 0px;
+}
+.quote {
+	background-color: #FF4C4C;
+	border: 0px solid #FF4C4C;
+	color: white;
+	border-radius: 10px;
+	display: flex;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 18px;
+	padding: 10px 50px;
+	text-decoration: none;
+	margin-left: 950px;
+	margin-top: -100px;
+	font-weight: normal;
+}
+.quote:hover{
+	background-color: #b83535;
+	border: 0px solid #b83535;
+	border-radius: 11px;
+	font-size: 19px;
+}
+/* pag02 */
+.text-pag2{
+	display: block;
+}
+.pag2{
+	height: 768px;
+	background: #FFFFFF;
+	display: flex;
+}
+.red-2{
+	display: inline-block;
+	color: #FF4C4C;
+	font-size: 90px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	padding-left: 50px;
+	position: relative;
+}
+.descrip{
+	display: block;
+	position: relative;
+	margin-left: 700px;
+	margin-top: 250px;
+	width: 600px;
+	color: #262626;
+	font-size: 24px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 100;
+	text-align: justify;
+}
+img{
+	max-width: 100%;
+ 	max-height: 100%;
+	object-fit: contain;
+}
+.image1{
+	width: 550px;
+	height: 500px;
+	padding-left: 50px;
+	display: block;
+	position:  absolute;
+	margin-top: -300px;
+	object-fit: fill;
+}
+.image2{
+	position: relative;
+	margin-left: 650px;
+	margin-top: -615px;
+	width: 600px;
+	padding-left: 50px;
+}
+.image3{
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 600px;
+	padding-left: 50px;
+}
+/* pag3 */
+.pag3{
+	height: 768px;
+}
+.text-pag3{
+	margin-top: 100px;
+	display: inline-flex;
+}
+.red-3{
+	display: inline-block;
+	color: #FF4C4C;
+	font-size: 90px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	padding-left: 30%;
+	position: absolute;
+}
+.ofer1{
+	color: #FF4C4C;
+	font-size: 30px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	display: inline-block;
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 150px;
+}
+.ofer2{
+	color: #FF4C4C;
+	font-size: 30px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	display: inline-block;
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 850px;
+}
+.ofer3{
+	color: #FF4C4C;
+	font-size: 30px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	display: inline-block;
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 150px;	
+}
+.ofer4{
+	color: #FF4C4C;
+	font-size: 30px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	display: inline-block;
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 850px;	
+}
+.descrip1, .descrip2 {
+	margin-top: -30px;
+	width: 400px;
+	color: #262626;
+	font-size: 18px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+}
+.descrip3, .descrip4{
+	margin-top: -30px;
+	width: 400px;
+	color: #262626;
+	font-size: 18px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+}
+/* pag4 */
+.pag4{	
+	margin-top: 80px;
+	height: 768px;
+	background-color: #262626;
+}
+.text-pag4{
+	text-align: center;
+}
+.red-4{
+	display: inline-block;
+	color: #FF4C4C;
+	font-size: 90px;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	/* position: absolute; */
+}
+.client1 h4{
+	margin-top: 100px;
+	height: 300px;
+	width: 300px;
+	font-size: 30px;
+	color: #FF4C4C;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	font-weight: 100;
+	position: absolute;
+}
+.client1 p{
+	color: #FFFFFF;
+	text-align: left;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 150px;
+	margin-left: 75px;
+	height: 200px;
+	width: 200px;
+}
+.client2 h4{
+	margin-top: 100px;
+	margin-left: -200px;
+	height: 300px;
+	width: 300px;
+	font-size: 30px;
+	color: #FF4C4C;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	font-weight: 100;
+	position: absolute;
+	display: inline-block;
+}
+.client2 p{
+	color: #FFFFFF;
+	text-align: left;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 150px;
+	margin-left: -122px;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+.client3 h4{
+	margin-top: 100px;
+	margin-left: 900px;
+	height: 300px;
+	width: 300px;
+	font-size: 30px;
+	color: #FF4C4C;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+	font-weight: 100;
+	position: relative;
+	display: inline-block;
+}
+.client3 p{
+	color: #FFFFFF;
+	text-align: left;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 150px;
+	margin-left: -225px;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+/* pag5 */
+.pag5{	
+	margin-top: -25px;
+	height: 768px;
+	background: url("https://abre.ai/eOtZ");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+.pag5 h2{
+	margin-top: 375px;
+	margin-bottom: 50px;
+	margin-left: 75px;
+	font-size: 90px;
+	color: #FF4C4C;
+	font-family: 'Barlow Condensed', Arial, sans-serif;
+}
+.contact a{
+	text-decoration: unset;
+	margin-left: 85px;
+	color: #FFFFFF;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	position: inherit;
+	display: inline-block;
+}
+.email, .site{
+	margin-bottom: 5px;	
+}
+.talk button{
+	background-color: #FF4C4C;
+	border: 1px solid #FF4C4C;
+	color: white;
+	border-radius: 3px;
+	display: flex;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 24px;
+	padding: 15px 50px;
+	text-decoration: none;
+	margin-left: 1010px;
+	margin-top: -65px;
+	font-weight: normal;
+}
+.talk a{
+	text-decoration: unset;
+}
+.talk button:hover{
+	background-color: #b83535;
+	border: 1px solid #b83535;
+	border-radius: 5px;
+	font-size: 25px;
 }
