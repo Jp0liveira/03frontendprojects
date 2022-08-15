@@ -23,7 +23,6 @@
 <img src="https://user-images.githubusercontent.com/106454449/183253931-e07cfc7c-69e3-48af-bb3e-e2612e357e14.gif" alt="gifsite">
 </div>
 <hr>
-<br>
 <div align="center">
 <h2>
 <a href="https://jp0liveira.github.io/website-presentation/" target="_blank">
