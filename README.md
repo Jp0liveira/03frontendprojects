@@ -25,10 +25,11 @@
 <hr>
 <br>
 <div align="center">
+<h2>
 <a href="https://jp0liveira.github.io/website-presentation/" target="_blank">
-
-## Click here!
+Click here!
 </a>
+</h2>
 </div>
 <br>
 <div align= center> 
